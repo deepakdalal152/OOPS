@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+// ------------------------------Inheritance-------------
+// class User{
+//     #password;
+//     constructor(name)
+//     {
+//         this.name =name
+//     }
+//     #validateUsername(userName)
+//     {
+//         return true;
+//     }
+//     #validatePassword(password)
+//     {
+//         return true;
+//     }
+//     signup(userName, password){
+//         let auth = false;
+//         auth = this.#validateUsername(userName) && this.#validatePassword(password)
+
+//         if(auth)
+//         {
+//             this.userName = userName
+//             this.#password = password
+//             console.log("signup success")
+//         }
+//         else{
+//             console.log("signup failed")
+//         }
+
+//     }
+//     login(userName,password)
+//     {
+//         if(userName === this.userName && password === this.#password){
+//             console.log("Login Success")
+//         }
+//         else{
+//             console.log("Login Failed")
+//         }
+//     }
+//     // changePassword(pass)
+//     // {
+//     //     this.#password = pass
+//     // }
+//     set passwrd(newPass)
+//     {
+//         this.#password = newPass
+//     }
+//     get user()
+//     {
+//         return this.userName
+//     }
+// }
+
+
+
+// class Author extends User{
+//     constructor(name,role){
+//         super(name);
+//         this.role = role
+//     }
+// }
+// class Admin extends Author{
+//     constructor(name, role)
+//     {
+//         super(name, role);
+//     }
+// }
+
+// let u1 = new Author('Amit',"Author")
+
+// let admin = new Admin("sumit","Admin")
+
+// admin.signup("sumit","sumit@345")
+
+// console.log(admin.user)
+
+// u1.signup("amit1", "amit@123")
+// u1.login("amit1","amit@123" )
+// // u1.username("vijay")
+// u1.passwrd ="@123"
+
+// console.log(u1,admin)
+
+// class private{
+//     #privates;
+//     constructor(){
+//         this.#privates = 42
+//     }
+// }
+// class p1 extends private{
+//     #subPrivate;
+//     constructor()
+//     {
+//         super();
+//         this.#subPrivate = 67
+//     }
+// }
+// let x = new private();
+// console.log(x.privateField())
+
+//------------------------------------------ 
+// class employee{
+//     constructor()
+//     {
+//         if(this.constructor == employee){
+//             throw new Error("can not be created")
+//         }
+//     }
+//     display(){
+//         throw new Error(" error")
+//     }
+// }
+
+// class manager extends employee{
+//     display(){
+//         // super.display();
+//         console.log(" im an")
+//     }
+// }
+
+// var emp = new manager();
+// emp.display()
+
+
+
+
+
+// class vehicle{
+//     run()
+//     {
+//         console.log("Vehicle is runnig")
+//     }
+// }
+
+// class car extends vehicle{
+//     run()
+//     {
+//         console.log("Car is runnig")
+//     }
+// }
+// class truck extends vehicle{
+//     run()
+//     {
+//         console.log("Truck is runnig")
+//     }
+// }
+
+
+// let v1 =  new vehicle();
+// let v2 =  new car();
+// let v3 =  new truck();
+// console.log(v1.run(),v2.run(),v3.run())
+</script>
