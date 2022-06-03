@@ -19,7 +19,16 @@
         #password;
         constructor(name)
         {
+            if(this.constructor === User)
+            {
+                throw Error("You are no allowed to use this class as a direct connection")
+            }
             this.name =  name;
+
+            display()
+            {
+                throw Error(" We can not display the data to user")
+            }
         }
         #validateUsername(username)
         {
@@ -37,7 +46,7 @@
                 return true;
             }
         }
-
+        // signup----------------
         signup(signupUsername, signupPassword)
         {
             // if validate then only user will able to save their nameon the data base----------
